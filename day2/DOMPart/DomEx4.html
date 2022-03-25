@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function(){
+            var output = '';
+            for(var i=0; i<5; i++){
+                output += '<h1>Header-'+i+'</h1>';
+            }
+            //document.body.innerHTML = output;
+            var node = document.createElement('h2');
+            var textnode = document.createTextNode('water');
+            node.appendChild(textnode);
+            document.body.appendChild(node)
+        }
+    </script>
+</head>
+<body>
+    <h1>Header1</h1>
+    <h1>Header2</h1>
+    <h1>Header3</h1>
+</body>
+</html>
